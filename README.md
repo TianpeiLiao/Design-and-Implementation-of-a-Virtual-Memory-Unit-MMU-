@@ -1,0 +1,5 @@
+# Design-and-Implementation-of-a-Virtual-Memory-Unit-MMU-
+his project consists of writing a program that translates logical to physical addresses for a virtual address space of size 216 = 65,536 bytes. Your program will read from a file containing logical addresses and, using a TLB and a page table, translates each logical address to its corresponding physical address and output the value of the byte stored at the translated physical address. Your learning goal is to use simulation to understand the steps involved in translating logical to physical addresses. This will include resolving page faults using demand paging, managing a TLB, and implementing a page-replacement algorithm.
+
+More Specifications
+Your program will read a file containing several 32-bit integer numbers that represent logical addresses. However, you need only be concerned with 16-bit addresses, so you must mask (i.e., ignore) the high-order 16 bits of each logical address. The low-order 16 bits are divided into (1) an 8-bit page number and (2) an 8-bit page offset.
